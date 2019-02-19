@@ -1,0 +1,41 @@
+21:31:58 **** Incremental Build of configuration Debug for project BlinkyLED04_mainapp ****
+"C:\\Users\\ntan\\ModusToolbox_1.0\\tools\\modus-shell-1.0\\bin\\make" -j4 all 
+Building file: ../Source/main.c
+Invoking: GNU ARM Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -Og -ffunction-sections -fdata-sections -Wall  -g3 -DCY8C6347BZI_BLD53 -DDEBUG -DAPP_NAME='"BlinkyLED04_cm4"' -I"C:/Users/ntan/ModusToolbox_1.0/libraries/psoc6sw-1.0/components/psoc6pdl/devices/psoc6/include" -I"C:/Users/ntan/ModusToolbox_1.0/libraries/psoc6sw-1.0/components/psoc6pdl/cmsis/include" -I"C:/Users/ntan/ModusToolbox_1.0/libraries/psoc6sw-1.0/components/psoc6pdl/drivers/include" -I"C:\Users\ntan\git\BlinkyLED04\BlinkyLED04_config" -I"C:\Users\ntan\git\BlinkyLED04\BlinkyLED04_mainapp/Source" -I"C:/Users/ntan/ModusToolbox_1.0/libraries/psoc6sw-1.0/components/psoc6pdl/drivers/source" -I"C:/Users/ntan/ModusToolbox_1.0/libraries/psoc6sw-1.0/components/psoc6pdl/devices/psoc6/startup/cm4_low" -I"C:/Users/ntan/ModusToolbox_1.0/libraries/psoc6sw-1.0/components/psoc6pdl/devices/psoc6/startup/cm4_high" -I"C:/Users/ntan/ModusToolbox_1.0/libraries/psoc6sw-1.0/components/psoc6pdl/devices/psoc6/linker/cm4" -I"C:\Users\ntan\git\BlinkyLED04\BlinkyLED04_config/GeneratedSource" -std=gnu11 -mfpu=fpv4-sp-d16 -ffat-lto-objects -g -MMD -MP -MF"Source/main.d" -MT"Source/main.o" -c -o "Source/main.o" "../Source/main.c"
+Finished building: ../Source/main.c
+ 
+Building target: BlinkyLED04_mainapp.elf
+Invoking: GNU ARM Cross C Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=softfp -Og -ffunction-sections -fdata-sections -Wall  -g3 -T "C:\Users\ntan\git\BlinkyLED04\BlinkyLED04_mainapp/cy8c6xx7_cm4_dual.ld" -Xlinker --gc-sections -Wl,-Map,"BlinkyLED04_mainapp.map" --specs=nano.specs -ffat-lto-objects -g --enable-objc-gc -mfpu=fpv4-sp-d16 -o "BlinkyLED04_mainapp.elf" -Wl,--start-group  ./psoc6sw-1.0/components/psoc6pdl/devices/psoc6/startup/gcc/startup_psoc6_01_cm4.o  ./psoc6sw-1.0/components/psoc6pdl/devices/psoc6/startup/system_psoc6_cm4.o  ./Source/main.o  ./BlinkyLED04_config/GeneratedSource/cycfg.o ./BlinkyLED04_config/GeneratedSource/cycfg_connectivity.o ./BlinkyLED04_config/GeneratedSource/cycfg_pins.o ./BlinkyLED04_config/GeneratedSource/cycfg_platform.o  C:/Users/ntan/git/BlinkyLED04/BlinkyLED04_mainapp_psoc6pdl/Debug/libBlinkyLED04_mainapp_psoc6pdl.a  -Wl,--end-group
+Finished building target: BlinkyLED04_mainapp.elf
+ 
+make --no-print-directory post-build
+C:/Users/ntan/ModusToolbox_1.0/tools/modus-shell-1.0/bin/bash --norc --noprofile C:/Users/ntan/ModusToolbox_1.0/libraries/psoc6sw-1.0/makefiles/platforms/PSOC6_DUAL_CORE/cymcuelftool_postbuild.bash C:/Users/ntan/ModusToolbox_1.0/tools/cymcuelftool-1.0/bin/cymcuelftool C:\Users\ntan\git\BlinkyLED04\BlinkyLED04_mainapp_cm0p/Debug/BlinkyLED04_mainapp_cm0p.elf C:\Users\ntan\git\BlinkyLED04\BlinkyLED04_mainapp/Debug/BlinkyLED04_mainapp.elf ARM_CM4
+Script: cymcuelftool_postbuild
+1: MCUELFTOOL_LOC : C:/Users/ntan/ModusToolbox_1.0/tools/cymcuelftool-1.0/bin/cymcuelftool
+2: CM0P_LOC : C:\Users\ntan\git\BlinkyLED04\BlinkyLED04_mainapp_cm0p/Debug/BlinkyLED04_mainapp_cm0p.elf
+3: CM4_LOC : C:\Users\ntan\git\BlinkyLED04\BlinkyLED04_mainapp/Debug/BlinkyLED04_mainapp.elf
+4: MCU_CORE : ARM_CM4
+
+No ELF section .cychecksum found, creating one
+Application checksum calculated and stored in ELF section .cychecksum
+No ELF section .cymeta found, creating one
+Checksum calculated and stored in ELF section .cymeta
+Application checksum calculated and stored in ELF section .cychecksum
+Checksum calculated and stored in ELF section .cymeta
+
+=========================================
+== Application CM0+ Memory ==
+=========================================
+code:10508	sram:1852
+
+=========================================
+== Application CM4 Memory ==
+=========================================
+code:10248	sram:2004
+
+ 
+
+21:32:02 Build Finished (took 3s.769ms)
+
